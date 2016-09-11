@@ -1,13 +1,41 @@
-<html>
-  <head>
-    <title>Bitcoin Pulse</title>
-    <link rel="shortcut icon" href="favicon.ico">
-  </head>
+---
+layout: default
+---
 
-  <body>
-    <p>Bitcoin Pulse is on hiatus</p>
-    <p>keep in touch with us through <a href="https://twitter.com/bitcoinpulse">twitter</a> or <a href="mailto:info@bitcoinpulse.com">email</a></p>
+<section class="row" style="margin-top: 50px; margin-bottom: 100px;">
+  <div class="col-md-12">
+    <div class="alert alert-danger" style="max-width: 50%; margin: 0 auto;">
+      <p>Bitcoin Pulse is currently on hiatus. Sorry :(</p>
+      <p>But you can keep in touch with us through <a href="https://twitter.com/bitcoinpulse">Twitter</a>.</p>
+      <p>Or give us a shout through <a href="mailto:info@bitcoinpulse.com">email</a>.</p>
 
-    <p>To the moon!</p>
-  </body>
-</html>
+      <span><i>To the moon!</i></span>
+    </div>
+  </div>
+</section>
+
+<section class="row" style="margin-bottom: 100px;">
+  <div class="col-md-12">
+    <h3>Meanwhile, here are some thoughts</h3>
+
+    <ul class="list-group" style="margin-top: 15px;">
+      {% for post in site.posts %}
+        <li class="list-group-item" style="padding: 0px; border: none;">
+          <h5>
+            <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <span style="margin-left: 25px; font-size: 12px;">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </h5>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!--
+<section class="row">
+  <div class="col-md-12">
+    <a class="twitter-timeline" data-dnt="true" data-theme="light" href="https://twitter.com/bitcoinpulse">Tweets by bitcoinpulse</a>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</section>
+-->
