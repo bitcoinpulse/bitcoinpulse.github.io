@@ -4,30 +4,25 @@ layout: default
 
 <section class="row" style="margin-top: 50px; margin-bottom: 100px;">
   <div class="col-md-12">
-    <div class="alert alert-danger" style="max-width: 50%; margin: 0 auto;">
-      <p>Bitcoin Pulse is currently on hiatus. Sorry :(</p>
-      <p>But you can keep in touch with us through <a href="https://twitter.com/bitcoinpulse">Twitter</a>.</p>
-      <p>Or give us a shout through <a href="mailto:info@bitcoinpulse.com">email</a>.</p>
+    <h1 style="margin-bottom: 50px;">
+      <a href="http://www.bitcoinpulse.com">Bitcoin Pulse</a>
+    </h1>
 
-      <span><i>To the moon!</i></span>
-    </div>
-  </div>
-</section>
+    <h4>Some of our thoughts</h4>
 
-<section class="row" style="margin-bottom: 100px;">
-  <div class="col-md-12">
-    <h3>Meanwhile, here are some thoughts</h3>
-
-    <ul class="list-group" style="margin-top: 15px;">
+    <ul class="list-group" style="margin-bottom: 50px;">
       {% for post in site.posts %}
         <li class="list-group-item" style="padding: 0px; border: none;">
-          <h5>
-            <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <span style="margin-left: 25px; font-size: 12px;">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </h5>
+          <!--<h5>-->
+          <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span style="margin-left: 25px; font-size: 12px;">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <!--</h5>-->
         </li>
       {% endfor %}
     </ul>
+
+    <h4>Want more?</h4>
+    <a href="https://twitter.com/bitcoinpulse">Follow us on twitter</a>
   </div>
 </section>
 
